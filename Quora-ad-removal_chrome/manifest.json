@@ -1,0 +1,24 @@
+{
+  "name": "Quora Ad removal",
+  "manifest_version": 3,
+  "version": "1.0",
+  "description": "Removes all Ads and Sponsered content for Quora pages",
+  "permissions": ["activeTab"
+  ],
+  "content_scripts": [
+    {
+      "run_at": "document_idle",
+      "matches": ["*://*.quora.com/*"],
+      "js": ["content_scripts/adblock.js"]
+    }
+  ],
+  "icons": { "16": "icons/Block-icon.png",
+    "48": "icons/adRemoval.png",
+   "128": "icons/adRemoval.png" },
+  "action": {
+    "default_icon": "icons/Block-icon.png",
+    "default_title": "Quora Ad Removal",
+    "default_popup": "popup/adblock_pop.html"
+  }
+
+}

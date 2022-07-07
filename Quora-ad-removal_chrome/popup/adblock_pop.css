@@ -1,0 +1,21 @@
+body{
+  padding: 1rem;
+  width: 250px;
+}
+
+h5{
+  color: rgb(238, 22, 22);
+  text-align: center;
+}
+.button {
+  margin: 3% auto;
+  padding: 4px;
+  text-align: center;
+  font-size: 1.5em;
+  cursor: pointer;
+  background-color: aqua;
+}
+
+.button:hover {
+  background-color: #3ea9f0;
+}
